@@ -75,7 +75,6 @@ const [editingId, setEditingId] = useState<number | null>(null);
       .then((data) => {
         const newItems = [...todos, data];
 
-        // {title: formData.title, completed: formData.isCompleted}
         setTodos(newItems);
 
         alert("ToDo Added succesfully");
