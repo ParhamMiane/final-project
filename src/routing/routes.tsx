@@ -19,7 +19,7 @@ const AppLayout = lazy(() => import("../components/design-system/AppLayout"))
 
 const AppRoutes = () => {
   return (
-    <Suspense fallback={<div className="bg-slate-500 text-gray-900 flex justify-center items-center top-0 left-0 text-4xl w-screen h-screen">LOading...</div>}>
+    <Suspense fallback={<div className="bg-slate-500 text-gray-900 flex justify-center items-center top-0 left-0 text-4xl w-screen h-screen">Loading...</div>}>
     <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/recoveryPass" element={<RecoveryPass />} />
